@@ -1,0 +1,168 @@
+.carousel-snippet {
+  --padding-x: 1rem;
+  position: relative;
+  background: none;
+  padding: 0;
+}
+.carousel-snippet[data-pos="0"] {
+  margin-top: 0;
+  padding-top: 0;
+}
+.carousel-snippet .header {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 15px;
+  font-family: var(--brand-font);
+  color: var(--search-text-02);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  padding-left: var(--padding-x);
+}
+.carousel-snippet .header i,
+.carousel-snippet .header .icon {
+  --size: 18px;
+  max-width: 20px;
+  margin-right: 10px;
+  margin-left: -2px;
+  color: var(--color-gray-2);
+}
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: inherit;
+  overflow: auto;
+  /* Hide scrollbar */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  /* Allow for .card shadows */
+  /* padding: 8px;
+  margin: -8px; */
+  padding: 2px;
+  margin: 0 -2px;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel .card {
+  --cards: 3;
+  /* calculated specifically for three cards in current column width */
+  --card-gutter: 9px;
+
+  /* minus one card as one gutter shouldn't be seen */
+  --card-width-offset: calc(var(--card-gutter) * (var(--cards) - 1));
+  width: calc((100% - var(--card-width-offset)) / var(--cards));
+  margin-right: var(--card-gutter);
+  min-width: var(--min-width, 212px);
+  box-shadow: 0 1px 12px rgb(30, 32, 40, 6%);
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  background-color: var(--search-bgd-04);
+  border-radius: var(--border-radius-large);
+  border: none;
+}
+.carousel .card:last-child {
+  margin-right: 0;
+}
+.carousel-snippet .carousel .card:hover,
+.carousel-snippet .carousel .card a:hover {
+  text-decoration: none;
+}
+.carousel .card-image {
+  position: relative;
+  border-bottom: solid 1px var(--bg-1);
+  overflow: hidden;
+}
+.carousel .card .img-bg {
+  /* Predicate entity (pe.css) will overwite some of these */
+  height: 110px;
+  position: relative;
+  background-color: var(--search-bgd-05);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+.carousel-snippet .carousel .card-image .play-icon {
+  position: absolute;
+  color: #ffffffb3;
+  width: 46px;
+  max-width: 46px;
+  height: 46px;
+  max-height: 46px;
+  top: calc(50% - 23px);
+  left: calc(50% - 23px);
+  display: flex;
+}
+.carousel-snippet .carousel .card-image .play-icon:hover {
+  color: var(--color-white);
+}
+.carousel-snippet .carousel .card-image .play-icon i {
+  font-size: 45px;
+  width: 46px;
+  height: 46px;
+}
+.carousel-snippet .carousel .card-image .duration {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  bottom: 5px;
+  right: 5px;
+  font-size: var(--text-xs);
+  color: var(--color-white);
+  padding: 0px 5px;
+  border-radius: var(--border-radius-xs);
+  font-weight: 500;
+}
+.carousel-snippet .carousel .card .card-body {
+  --max-lines: 4;
+  color: var(--color-gray-3);
+  height: 130px;
+  font-size: 15px;
+  display: -webkit-box;
+  overflow: hidden;
+  /* line-height: 1.2; */
+  white-space: normal;
+  padding: 0.8rem;
+  -webkit-line-clamp: var(--max-lines);
+  -webkit-box-orient: vertical;
+}
+.carousel-snippet .carousel .card .card-source {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 0.655rem;
+  color: var(--search-text-04);
+  letter-spacing: 0.1px; /* Manrope letter-spacing */
+}
+.carousel-snippet .carousel .card .card-body .title {
+  color: var(--search-interactive-01);
+  font-family: var(--main-font);
+  font-size: 0.75rem;
+  line-height: 21px;
+  letter-spacing: 0.1px; /* Manrope letter-spacing */
+}
+.carousel-snippet .carousel .card .card-body .title:hover {
+  text-decoration: underline;
+}
+.carousel-snippet .carousel .card .card-footer {
+  padding: 0.5rem 0.8rem;
+  color: var(--color-gray-3);
+}
+.carousel-snippet .carousel .card .card-footer__timestamp {
+  color: var(--search-text-06);
+  font-family: var(--main-font);
+  font-size: 0.65rem;
+  letter-spacing: 0.1px; /* Manrope letter-spacing */
+}
+.center-horizontally {
+  display: flex;
+  align-items: center;
+}
+.carousel-snippet .goggles-boost:after {
+  top: 0.4rem !important;
+}

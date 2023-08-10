@@ -1,4 +1,45 @@
 .container1 {
     background: #1f2937;
     height: 500px;
+}   
+
+.container3 {
+    background: #e5e7eb;
+    height: 400px;
+
+}
+
+.container3, .qoute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-family: light italic;
+    color: #1f2937;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+
+.qouted {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 760px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+
+
+
+.container5 {
+    background: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e5e7eb;
+    height: 100px;
+    font-size: 20px;
 }
