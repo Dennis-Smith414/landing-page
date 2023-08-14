@@ -5,11 +5,11 @@
 
 .container2 {
     background: white;
-    height: 400px; 
+    height: 400px;
     display: flex;
     justify-content: center;
-    
-
+    text-align: center;
+   
 }
 
 
@@ -25,22 +25,28 @@
 
 .info {
     font-size: small;
-    gap: 52px;
     padding-top: 50px;
+    width: 250px;
+    padding-bottom: 200px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  
 
     
 }
 
 .text {
-    display: flex;
-    flex-wrap: wrap;
+    width: 150px;
 }
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-color: #3882f6;
+    border-radius: 25%;
     }
 
 .container3 {
