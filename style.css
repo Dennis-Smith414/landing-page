@@ -4,8 +4,7 @@
     background-color: #1f2937;
     padding-left: 100px;
     padding-right: 100px;
-    border-style: dotted;
-    border-color: red;
+
 }
 
 .header-right, .header-left {
@@ -42,14 +41,45 @@ a {
    background: #1f2937;
    height: 500px;
    display: flex;
-   justify-content: flex-start;
+   justify-content: center;
+   align-items: center;
+   padding-left: 100px;
+   padding-right: 100px;
 }
 
-.right {
-    width: 250px;
+.header-text {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.sub-text {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.sign-button {
+    background-color: #3882F6;
+    color: #ffffff;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #3882F6;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#cat-photo {
+    width: 500px;
     height: 250px;
-    background: grey;
-    
+    border-radius: 0px;
+    border-style: none;
+
 }
 
 
